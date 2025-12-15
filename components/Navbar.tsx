@@ -79,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
         className={`fixed left-0 w-full z-50 border-b transition-all duration-500 ease-in-out ${hideNavbar ? '-translate-y-full opacity-0 pointer-events-none lg:translate-y-0 lg:opacity-100 lg:pointer-events-auto' : 'translate-y-0 opacity-100'
           } lg:top-0 top-0 ${isScrolled
             ? 'bg-white/10 backdrop-blur-md border-white/20 py-2 shadow-sm'
-            : 'bg-white/5 backdrop-blur-sm border-white/10 pt-16 pb-8'
+            : 'bg-white/5 backdrop-blur-sm border-white/10 py-6 lg:pt-16 lg:pb-8'
           }`}
       >
         <div className="container mx-auto px-8 md:px-12 flex items-center justify-between">
@@ -105,7 +105,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
             to="/"
             className="flex-shrink-0 cursor-pointer text-center group transition-all duration-500"
           >
-            <h1 className={`font-serif font-medium tracking-tight ${logoColorClass} transition-all duration-500 ${isScrolled ? 'text-2xl lg:text-3xl' : 'text-4xl lg:text-5xl'}`}>
+            <h1 className={`font-serif font-medium tracking-tight ${logoColorClass} transition-all duration-500 ${isScrolled ? 'text-2xl lg:text-3xl' : 'text-3xl lg:text-5xl'}`}>
               Karima
             </h1>
             <span className={`text-[10px] ${accentColorClass} hidden lg:block mt-1 font-serif italic tracking-wider transition-all duration-300 ${isScrolled ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100 h-auto'}`}>
