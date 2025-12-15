@@ -37,7 +37,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
   // Other Pages (Top): Transparent background with Dark text (for light page bg).
   // Scrolled (Any Page): Solid/Blur background with Dark text.
 
-  const useDarkText = !isScrolled && (!isHome && !isProductPage); // Only use dark text if NOT scrolled AND it's a standard internal page top.
+  const useDarkText = isScrolled || (!isHome && !isProductPage); // Use dark text if scrolled (on glass) OR if standard internal page top.
 
   // Helper for responsive colors: Mobile (Light/Dark based on useDarkText) vs Desktop (Product Page needs Dark on Top)
   const getResponsiveColor = (darkInfo: string, lightInfo: string) => {
@@ -76,10 +76,10 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
 
       {/* Main Nav */}
       <nav
-        className={`absolute left-0 w-full z-50 border-b ${hideNavbar ? '-translate-y-full opacity-0 pointer-events-none lg:translate-y-0 lg:opacity-100 lg:pointer-events-auto' : 'translate-y-0 opacity-100'
-          } lg:top-8 top-0 ${isScrolled
-            ? 'bg-karima-brand/95 backdrop-blur-md border-karima-base/5 py-4 shadow-md shadow-black/10'
-            : 'bg-transparent border-transparent py-8'
+        className={`fixed left-0 w-full z-50 border-b transition-all duration-500 ease-in-out ${hideNavbar ? '-translate-y-full opacity-0 pointer-events-none lg:translate-y-0 lg:opacity-100 lg:pointer-events-auto' : 'translate-y-0 opacity-100'
+          } lg:top-0 top-0 ${isScrolled
+            ? 'bg-white/10 backdrop-blur-md border-white/20 py-2 shadow-sm'
+            : 'bg-white/5 backdrop-blur-sm border-white/10 pt-16 pb-8'
           }`}
       >
         <div className="container mx-auto px-8 md:px-12 flex items-center justify-between">
@@ -103,12 +103,12 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenSearch }) => {
           {/* Center Logo */}
           <Link
             to="/"
-            className="flex-shrink-0 cursor-pointer text-center group"
+            className="flex-shrink-0 cursor-pointer text-center group transition-all duration-500"
           >
-            <h1 className={`text-4xl lg:text-5xl font-serif font-medium tracking-tight ${logoColorClass}`}>
+            <h1 className={`font-serif font-medium tracking-tight ${logoColorClass} transition-all duration-500 ${isScrolled ? 'text-2xl lg:text-3xl' : 'text-4xl lg:text-5xl'}`}>
               Karima
             </h1>
-            <span className={`text-[10px] ${accentColorClass} hidden lg:block mt-1 font-serif italic tracking-wider`}>
+            <span className={`text-[10px] ${accentColorClass} hidden lg:block mt-1 font-serif italic tracking-wider transition-all duration-300 ${isScrolled ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100 h-auto'}`}>
               Faithfully Beautiful
             </span>
           </Link>
