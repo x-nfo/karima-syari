@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karima Syar'i</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Plus Jakarta Sans (Modern) and Cormorant Garamond (Super Luxury Serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Marcellus"', 'serif'],
+          },
+          fontSize: {
+            'xxs': '10px',
+            'micro': '9px',
+            'nano': '8px',
+          },
+          colors: {
+            stone: {
+              50: '#FAF9F6',
+              100: '#F5F4F1',
+              200: '#E6E4DF',
+              300: '#D5D1CB',
+              400: '#A8A29E',
+              500: '#78716C',
+              600: '#57534E',
+              800: '#292524',
+              900: '#1C1917',
+              950: '#0C0A09',
+            },
+            karima: {
+              base: '#F0EBE5',
+              brand: '#4A201E',
+              accent: '#8C544F',
+              ink: '#261F1D',
+              gold: '#C5A059'
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards',
+            'slide-up': 'slideUp 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards',
+            'slide-down': 'slideDown 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards',
+            'zoom-out': 'zoomOut 20s linear infinite',
+            'grain': 'grain 8s steps(10) infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { opacity: '0', transform: 'translateY(100px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            slideDown: {
+              '0%': { opacity: '0', transform: 'translateY(-50px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            zoomOut: {
+              '0%': { transform: 'scale(1.1)' },
+              '100%': { transform: 'scale(1.0)' }
+            },
+            grain: {
+              '0%, 100%': { transform: 'translate(0, 0)' },
+              '10%': { transform: 'translate(-5%, -10%)' },
+              '20%': { transform: 'translate(-15%, 5%)' },
+              '30%': { transform: 'translate(7%, -25%)' },
+              '40%': { transform: 'translate(-5%, 25%)' },
+              '50%': { transform: 'translate(-15%, 10%)' },
+              '60%': { transform: 'translate(15%, 0%)' },
+              '70%': { transform: 'translate(0%, 15%)' },
+              '80%': { transform: 'translate(3%, 35%)' },
+              '90%': { transform: 'translate(-10%, 10%)' }
+            }
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      /* Adjustable Grain Intensity (0.0 to 1.0) */
+      --grain-opacity: 0.06;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::selection {
+      background-color: #4A201E;
+      color: #F0EBE5;
+    }
+
+    .font-serif {
+      font-variant-numeric: oldstyle-nums;
+    }
+
+    /* Film Grain Effect Overlay */
+    .bg-grain::before {
+      content: "";
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      /* Updated SVG for finer, more cinematic grain (baseFrequency 0.8) */
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      animation: grain 8s steps(10) infinite;
+      pointer-events: none;
+      z-index: 9999;
+
+      /* Uses CSS variable for easy adjustment */
+      opacity: var(--grain-opacity);
+
+      /* Overlay blends better with both dark and light backgrounds than multiply */
+      mix-blend-mode: overlay;
+    }
+
+    /* Reduce motion for accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      .bg-grain::before {
+        animation: none;
+      }
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-karima-base text-karima-ink antialiased bg-grain">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
