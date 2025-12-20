@@ -83,6 +83,29 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* BEST SELLERS SECTION */}
+            <section className="py-16 md:py-40 px-6 bg-white">
+                <div className="container mx-auto">
+                    <div className="flex flex-col items-center mb-8 md:mb-28 reveal-on-scroll">
+                        <span className="text-[10px] text-karima-accent uppercase tracking-[0.4em] mb-4 md:mb-6 block font-medium">Most Loved</span>
+                        <h2 className="text-3xl md:text-7xl lg:text-8xl font-serif text-karima-brand leading-none text-center font-thin">
+                            Best <span className="italic opacity-70">Sellers.</span>
+                        </h2>
+                    </div>
+
+                    <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar gap-2 md:grid-cols-3 md:gap-x-12 md:gap-y-28 pb-8 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0">
+                        {PRODUCTS.slice(6, 9).map((product, idx) => (
+                            <div key={product.id} className="reveal-on-scroll w-[40vw] md:w-auto snap-start shrink-0" style={{ transitionDelay: `${idx * 150}ms` }}>
+                                <ProductCard
+                                    product={product}
+                                    onClick={() => navigate(`/product/${product.id}`)}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* 3. CURATED CATEGORIES - Editorial Style */}
             <section className="py-10 md:py-20 px-0 bg-white">
                 <div className="w-full">
