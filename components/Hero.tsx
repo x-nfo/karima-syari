@@ -24,7 +24,7 @@ const SLIDES = [
     id: 3,
     subtitle: 'Strength in Modesty',
     title: 'Abaya Denim',
-    image: '/images/3.jpg', // Replaced with a valid dark/elegant image
+    image: '/images/safa-series.jpg', // Replaced with a valid dark/elegant image
     alt: 'Abaya Denim Collection'
   }
 ];
