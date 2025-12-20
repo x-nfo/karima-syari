@@ -41,7 +41,7 @@ const StoreBanner = () => {
                         <div className="absolute inset-0 bg-[linear-gradient(105deg,var(--tw-gradient-stops))] from-karima-brand from-25% via-karima-brand/60 via-60% to-transparent z-10"></div>
 
                         <img
-                            src="/images/SLIDE 7 2.jpg"
+                            src="/images/marwah-series.jpg"
                             alt="Boutique Experience"
                             className="w-full h-full object-cover object-top opacity-90"
                             style={{ objectPosition: 'center' }}

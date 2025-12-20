@@ -10,9 +10,10 @@ export const PRODUCTS: Product[] = [
     // Close up / Texture / Neutral
     image: '/images/hayya-black-1.jpg',
     hoverImage: '/images/hayya-black-3.jpg',
+    images: ['/images/hayya-black-1.jpg', '/images/hayya-black-3.jpg', '/images/hayya-black-2.jpg', '/images/hayya-black-4.jpg'],
     description: 'Inspired by Hayya - an invitation to move forward this abaya brings together feminity and strength. Modest yet empowering, in every detail.',
     tags: ['everyday', 'basic', 'grey'],
-    colors: ['#808080', '#ffffff', '#000000', '#d3d3d3'],
+    colors: ['#000000'],
     sizes: ['S', 'M', 'L', 'XL']
 
   },
@@ -24,9 +25,10 @@ export const PRODUCTS: Product[] = [
     // Close up / Texture / Neutral
     image: '/images/hayya-choco-1.jpg',
     hoverImage: '/images/hayya-choco-2.webp',
+    images: ['/images/hayya-choco-1.jpg', '/images/hayya-choco-2.webp', '/images/hayya-choco-3.jpg', '/images/hayya-choco-4.webp'],
     description: 'Inspired by Hayya - an invitation to move forward this abaya brings together feminity and strength. Modest yet empowering, in every detail.',
     tags: ['everyday', 'basic', 'grey'],
-    colors: ['#808080', '#ffffff', '#000000', '#d3d3d3'],
+    colors: ['#a68483'],
     sizes: ['S', 'M', 'L', 'XL']
 
   },
@@ -38,10 +40,11 @@ export const PRODUCTS: Product[] = [
     // Elegant Black Abaya / Modest Wear
     image: '/images/saliha-almond-1.webp',
     hoverImage: '/images/saliha-almond-2.webp',
+    images: ['/images/saliha-almond-1.webp', '/images/saliha-almond-2.webp'],
     description: 'Saliha - for women who dress with faith and dignitiy. More than modest war, its a reminder of beauty in righteousness. Designed in airy crinkle fabric',
     tags: ['elegant', 'black', 'silk', 'evening'],
     isNew: true,
-    colors: ['#1a1a1a', '#4a4a4a', '#8b4513'],
+    colors: ['#dbc5ba'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -52,9 +55,10 @@ export const PRODUCTS: Product[] = [
     // Close up / Texture / Neutral
     image: '/images/saliha-wood-1.jpg',
     hoverImage: '/images/saliha-wood-2.webp',
+    images: ['/images/saliha-wood-1.jpg', '/images/saliha-wood-2.webp'],
     description: 'Saliha - for women who dress with faith and dignitiy. More than modest war, its a reminder of beauty in righteousness. Designed in airy crinkle fabric',
     tags: ['everyday', 'basic', 'grey'],
-    colors: ['#808080', '#ffffff', '#000000', '#d3d3d3'],
+    colors: ['#e4cacd'],
     sizes: ['S', 'M', 'L', 'XL']
   },
 
@@ -66,9 +70,10 @@ export const PRODUCTS: Product[] = [
     // Dark Blue / Evening / Luxury
     image: '/images/KRMA8293 copy.jpg',
     hoverImage: '/images/KRMA8303 copy-min.jpg',
+    images: ['/images/KRMA8293 copy.jpg', '/images/KRMA8303 copy-min.jpg'],
     description: 'Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.',
     tags: ['luxury', 'navy', 'velvet', 'wedding'],
-    colors: ['#000080', '#4b0082'],
+    colors: ['#99432f'],
     sizes: ['S', 'M', 'L']
   },
   {
@@ -79,9 +84,10 @@ export const PRODUCTS: Product[] = [
     // Close up / Texture / Neutral
     image: '/images/katta-dusty-pink-1.jpg',
     hoverImage: '/images/katta-dusty-pink-2.jpg',
+    images: ['/images/katta-dusty-pink-1.jpg', '/images/katta-dusty-pink-2.jpg'],
     description: 'Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.',
     tags: ['everyday', 'basic', 'grey'],
-    colors: ['#808080', '#ffffff', '#000000', '#d3d3d3'],
+    colors: ['#c97f86'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -94,7 +100,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/katta-olive-2.webp',
     description: 'Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.',
     tags: ['everyday', 'basic', 'grey'],
-    colors: ['#808080', '#ffffff', '#000000', '#d3d3d3'],
+    colors: ['#635c4a'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -107,7 +113,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/katta-moss-2.webp',
     description: 'Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.',
     tags: ['prayer', 'travel', 'sage'],
-    colors: ['#556b2f', '#f0f8ff', '#708090'],
+    colors: ['#988076'],
     sizes: ['S', 'M', 'L', 'XL']
   },
 
@@ -121,7 +127,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/katta-sage-2.webp',
     description: 'Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.',
     tags: ['prayer', 'travel', 'sage'],
-    colors: ['#556b2f', '#f0f8ff', '#708090'],
+    colors: ['#cfb59d'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -134,7 +140,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/katta-tosca-2.webp',
     description: 'Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.',
     tags: ['prayer', 'travel', 'sage'],
-    colors: ['#556b2f', '#f0f8ff', '#708090'],
+    colors: ['#a3a2a0'],
     sizes: ['S', 'M', 'L', 'XL']
   },
 
@@ -146,9 +152,10 @@ export const PRODUCTS: Product[] = [
     // Neutral Beige/Cream Set
     image: '/images/safa-navy-2.webp',
     hoverImage: '/images/safa-navy-3.webp',
+    images: ['/images/safa-navy-1.webp', '/images/safa-navy-2.webp', '/images/safa-navy-3.webp', '/images/safa-navy-4.webp'],
     description: 'Inspired by Safa - the sacred hill of purity this abaya embodies simplicity and grace. Crafted from plain denim, it reflects strength in modesty and softness in spirit.',
     tags: ['casual', 'beige', 'linen', 'summer'],
-    colors: ['#d2b48c', '#f5f5dc', '#a0522d'],
+    colors: ['#373557'],
     sizes: ['XS', 'S', 'M', 'L']
 
   },
@@ -158,11 +165,12 @@ export const PRODUCTS: Product[] = [
     category: 'Abaya Denim',
     price: 699000,
     // Neutral Beige/Cream Set
-    image: '/images/safa-jeans-2.jpg',
+    image: '/images/safa-jeans-0.webp',
     hoverImage: '/images/safa-jeans-3.webp',
+    images: ['/images/safa-jeans-1.jpg', '/images/safa-jeans-2.jpg', '/images/safa-jeans-3.webp', '/images/safa-jeans-4.webp'],
     description: 'Inspired by Safa - the sacred hill of purity this abaya embodies simplicity and grace. Crafted from plain denim, it reflects strength in modesty and softness in spirit.',
     tags: ['casual', 'beige', 'linen', 'summer'],
-    colors: ['#d2b48c', '#f5f5dc', '#a0522d'],
+    colors: ['#6c84b8'],
     sizes: ['XS', 'S', 'M', 'L']
 
   },
@@ -176,7 +184,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/safa-blue-2.webp',
     description: 'Inspired by Safa - the sacred hill of purity this abaya embodies simplicity and grace. Crafted from plain denim, it reflects strength in modesty and softness in spirit.',
     tags: ['casual', 'beige', 'linen', 'summer'],
-    colors: ['#d2b48c', '#f5f5dc', '#a0522d'],
+    colors: ['#86a6cf'],
     sizes: ['XS', 'S', 'M', 'L']
 
   },
@@ -186,11 +194,12 @@ export const PRODUCTS: Product[] = [
     category: 'Abaya Denim',
     price: 699000,
     // Neutral Beige/Cream Set
-    image: '/images/safa light blue 1.jpg',
-    hoverImage: '/images/safa light blue 3.webp',
+    image: '/images/safa-light-blue-2.webp',
+    hoverImage: '/images/safa-light-blue-3.webp',
+    images: ['/images/safa-light-blue-1.jpg', '/images/safa-light-blue-2.jpg', '/images/safa-light-blue-3.webp', '/images/safa-light-blue-4.webp'],
     description: 'Inspired by Safa - the sacred hill of purity this abaya embodies simplicity and grace. Crafted from plain denim, it reflects strength in modesty and softness in spirit.',
     tags: ['casual', 'beige', 'linen', 'summer'],
-    colors: ['#d2b48c', '#f5f5dc', '#a0522d'],
+    colors: ['#d3e3f5'],
     sizes: ['XS', 'S', 'M', 'L']
 
   },
@@ -204,11 +213,11 @@ export const PRODUCTS: Product[] = [
     category: 'Abaya Denim',
     price: 699000,
     // Maroon/Red/Dark mood
-    image: '/images/marwah-navy-1.jpg',
+    image: '/images/marwah-navy-2.webp',
     hoverImage: '/images/marwah-navy-3.webp',
     description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
     tags: ['hijab', 'modest', 'maroon'],
-    colors: ['#800000', '#000000', '#ffc0cb'],
+    colors: ['#373557'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -221,7 +230,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/marwah-jeans-2.webp',
     description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
     tags: ['hijab', 'modest', 'maroon'],
-    colors: ['#800000', '#000000', '#ffc0cb'],
+    colors: ['#6c84b8'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -234,7 +243,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/marwah-blue-2.webp',
     description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
     tags: ['hijab', 'modest', 'maroon'],
-    colors: ['#800000', '#000000', '#ffc0cb'],
+    colors: ['#86a6cf'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -247,7 +256,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/marwah-light-blue-3.webp',
     description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
     tags: ['hijab', 'modest', 'maroon'],
-    colors: ['#800000', '#000000', '#ffc0cb'],
+    colors: ['#d3e3f5'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -260,7 +269,7 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/khimar-1.webp',
     description: 'Grace in motion. The Side Khimar brings effortless modesty in six timeless shades, perfect for both daily wear and special moments.',
     tags: ['hijab', 'modest', 'maroon'],
-    colors: ['#800000', '#000000', '#ffc0cb'],
+    colors: ['#deccca', '#c97f86', '#786167', '#a7b4cc', '#522e28', '#000000'],
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -273,7 +282,35 @@ export const PRODUCTS: Product[] = [
     hoverImage: '/images/khimar-bandana-1.webp',
     description: 'The Khimar Bandana offers a chic and modest twist for your daily wear. Available in four easy-to-style colors.',
     tags: ['hijab', 'modest', 'maroon'],
-    colors: ['#800000', '#000000', '#ffc0cb'],
+    colors: ['#c2b6b9', '#99432f', '#635c4a', '#704052'],
+    sizes: ['S', 'M', 'L', 'XL']
+  },
+  {
+    id: 'p21',
+    name: 'Safa Series',
+    category: 'Abaya Denim',
+    price: 699000,
+    // Maroon/Red/Dark mood
+    image: '/images/safa-series-baju.webp',
+    hoverImage: '/images/safa-series.jpg',
+    images: ['/images/safa-series-baju.webp', '/images/safa-navy-1.webp', '/images/safa-navy-2.webp', '/images/safa-jeans-2.jpg', '/images/safa-jeans-3.webp', '/images/safa-blue-1.webp', '/images/safa-blue-3.webp', '/images/safa-light-blue-1.jpg', '/images/safa-light-blue-3.webp'],
+    description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
+    tags: ['hijab', 'modest', 'maroon'],
+    colors: ['#373557', '#6c84b8', '#86a6cf', '#d3e3f5'],
+    sizes: ['S', 'M', 'L', 'XL']
+  },
+  {
+    id: 'p22',
+    name: 'Marwah Series',
+    category: 'Abaya Denim',
+    price: 699000,
+    // Maroon/Red/Dark mood
+    image: '/images/marwah-series-baju.webp',
+    hoverImage: '/images/marwah-navy-1.jpg',
+    images: ['/images/marwah-series-baju.webp', '/images/marwah-navy-1.jpg', '/images/marwah-navy-3.webp', '/images/marwah-jeans-1.webp', '/images/marwah-jeans-2.webp', '/images/marwah-blue-1.webp', '/images/marwah-blue-3.webp', '/images/marwah-light-blue-1.webp', '/images/marwah-light-blue-3.webp'],
+    description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
+    tags: ['hijab', 'modest', 'maroon'],
+    colors: ['#373557', '#6c84b8', '#86a6cf', '#d3e3f5'],
     sizes: ['S', 'M', 'L', 'XL']
   },
 

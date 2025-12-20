@@ -15,7 +15,11 @@ const ProductDetail = () => {
 
     const [activeImgIndex, setActiveImgIndex] = useState(0);
     const [isLiked, setIsLiked] = useState(false);
-    const productImages = product ? [product.image, product.hoverImage].filter(Boolean) : [];
+
+    // Use the new images array if available, otherwise fallback to existing behavior
+    const productImages = product?.images?.length
+        ? product.images
+        : (product ? [product.image, product.hoverImage].filter(Boolean) : []);
 
     const [selectedColor, setSelectedColor] = useState<string>('');
     const [selectedSize, setSelectedSize] = useState<string>('');

@@ -10,6 +10,7 @@ export interface Product {
   isNew?: boolean;
   colors?: string[]; // Hex codes
   sizes?: string[]; // e.g. 'XS', 'S', 'M', 'L'
+  images?: string[];
 }
 
 export interface CartItem extends Product {
