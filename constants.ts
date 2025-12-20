@@ -4,13 +4,13 @@ import { Product } from './types';
 export const PRODUCTS: Product[] = [
   {
     id: 'p1',
-    name: 'The Medina Silk Abaya',
+    name: 'Saliha - Almond',
     category: 'Abaya',
-    price: 1250000,
+    price: 699000,
     // Elegant Black Abaya / Modest Wear
-    image: '/images/saliha 1.jpg',
-    hoverImage: '/images/saliha 2.jpg',
-    description: 'A masterpiece of minimalism. Crafted from premium Japanese Medina silk, this abaya flows like water. Perfect for evening gatherings or upscale daily wear.',
+    image: '/images/saliha almond.jpg',
+    hoverImage: '/images/saliha-almond-2.webp',
+    description: 'Saliha - for women who dress with faith and dignitiy. More than modest war, its a reminder of beauty in righteousness. Designed in airy crinkle fabric',
     tags: ['elegant', 'black', 'silk', 'evening'],
     isNew: true,
     colors: ['#1a1a1a', '#4a4a4a', '#8b4513'],
@@ -18,68 +18,68 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'p2',
-    name: 'Sahara Earth Tone Set',
+    name: 'Safa - Light Blue',
     category: 'Abaya Denim',
-    price: 1450000,
+    price: 699000,
     // Neutral Beige/Cream Set
-    image: '/images/safa.jpg',
-    hoverImage: '/images/marwah 2.jpg',
-    description: 'Inspired by the dunes. A breathable linen blend two-piece set featuring a modest tunic and wide-leg trousers.',
+    image: '/images/safa light blue 1.jpg',
+    hoverImage: '/images/safa light blue 3.webp',
+    description: 'Inspired by Safa - the sacred hill of purity this abaya embodies simplicity and grace. Crafted from plain denim, it reflects strength in modesty and softness in spirit.',
     tags: ['casual', 'beige', 'linen', 'summer'],
     colors: ['#d2b48c', '#f5f5dc', '#a0522d'],
     sizes: ['XS', 'S', 'M', 'L']
   },
   {
     id: 'p3',
-    name: 'Royal Chiffon Khimar',
-    category: 'Khimar',
-    price: 450000,
+    name: 'Marwah - Navy',
+    category: 'Abaya Denim',
+    price: 699000,
     // Maroon/Red/Dark mood
-    image: '/images/marwah 1.jpg',
-    hoverImage: '/images/safa 2.jpg',
-    description: 'Double-layered chiffon providing full coverage without the weight. Designed for ultimate comfort and grace.',
+    image: '/images/marwah-navy-1.jpg',
+    hoverImage: '/images/marwah-navy-3.webp',
+    description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
     tags: ['hijab', 'modest', 'maroon'],
     colors: ['#800000', '#000000', '#ffc0cb'],
-    sizes: ['Standard']
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 'p4',
-    name: 'Urban Prayer Gown',
+    name: 'Katta - Tosca',
     category: 'Abaya',
-    price: 850000,
+    price: 785000,
     // Clean White/Sage or Minimalist
     image: '/images/tas karima.jpg',
-    hoverImage: '/images/medina-silk-abaya.png',
-    description: 'Compact, travel-friendly, and stylish. The modern woman\'s essential for spiritual connection anywhere.',
+    hoverImage: '/images/KRMA8184 copy.webp',
+    description: 'Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.',
     tags: ['prayer', 'travel', 'sage'],
     colors: ['#556b2f', '#f0f8ff', '#708090'],
-    sizes: ['Free Size']
+    sizes: ['S', 'M', 'L', 'XL']
   },
   {
     id: 'p5',
-    name: 'Noor Evening Gown',
+    name: 'Katta - Terracotta',
     category: 'Abaya',
-    price: 2100000,
+    price: 785000,
     // Dark Blue / Evening / Luxury
-    image: '/images/karima biru.jpg',
-    hoverImage: '/images/royal-chiffon-khimar.png',
-    description: 'Hand-beaded details on soft velvet. A statement piece for weddings and galas.',
+    image: '/images/KRMA8293 copy.jpg',
+    hoverImage: '/images/KRMA8303 copy-min.jpg',
+    description: 'Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.',
     tags: ['luxury', 'navy', 'velvet', 'wedding'],
     colors: ['#000080', '#4b0082'],
     sizes: ['S', 'M', 'L']
   },
   {
     id: 'p6',
-    name: 'Essential Jersey Scarf',
-    category: 'Khimar Bandana',
-    price: 250000,
+    name: 'Hayya - Black',
+    category: 'Abaya',
+    price: 749000,
     // Close up / Texture / Neutral
-    image: '/images/karima halal fair.jpg',
-    hoverImage: '/images/royal-chiffon-khimar.png',
-    description: 'Premium cotton jersey. Non-slip, breathable, and needs no pins.',
+    image: '/images/KRMA8658 copy.jpg',
+    hoverImage: '/images/KRMA8665 copy.jpg',
+    description: 'Inspired by Hayya - an invitation to move forward this abaya brings together feminity and strength. Modest yet empowering, in every detail.',
     tags: ['everyday', 'basic', 'grey'],
     colors: ['#808080', '#ffffff', '#000000', '#d3d3d3'],
-    sizes: ['Standard']
+    sizes: ['S', 'M', 'L', 'XL']
   }
 ];
 

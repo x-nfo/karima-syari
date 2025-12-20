@@ -17,7 +17,7 @@ const SLIDES = [
     id: 2,
     subtitle: 'Feminity & Strength',
     title: 'Hayya Series',
-    image: '/images/KARIMAPOST.jpg', // Replaced with a valid portrait/fashion image
+    image: '/images/KRMA8640_1.webp', // Replaced with a valid portrait/fashion image
     alt: 'Hayya Series'
   },
   {
