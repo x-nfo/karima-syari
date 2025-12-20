@@ -1,0 +1,23 @@
+netstat -ano | findstr :3000
+taskkill /PID 11564 /F
+taskkill /PID 11564 /F
+
+Marcellus
+Plus Jakarta Suns
+
+Saliha Series
+=============
+Saliha - for women who dress with faith and dignitiy. More than modest war, it's a reminder of beauty in righteousness. Designed in airy crinkle fabric
+
+
+Hayya Series
+==============
+Inspired by Hayya - an invitation to move forward this abaya brings together feminity and strength. Modest yet empowering, in every detail.
+
+Katta Series
+============
+Katta speaks in lines and strokes - a story woven into fabric. Minimal yet expressive, designed in textured striped material for a graceful everyday wear.
+
+Safa Series
+===========
+Inspired by Safa - the sacred hill of purity this abaya embodies simplicity and grace. Crafted from plain denim, it reflects strength in modesty and softness in spirit.
