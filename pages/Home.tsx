@@ -103,9 +103,9 @@ const Home = () => {
                                 <img
                                     src={
                                         cat === 'Abaya' ? PRODUCTS[0].image :
-                                            cat === 'Abaya Denim' ? PRODUCTS[1].image :
-                                                cat === 'Khimar' ? PRODUCTS[2].image :
-                                                    PRODUCTS[4].image
+                                            cat === 'Abaya Denim' ? PRODUCTS[10].image :
+                                                cat === 'Khimar' ? PRODUCTS[18].image :
+                                                    PRODUCTS[19].image
                                     }
                                     className="w-full h-full object-cover transition-transform duration-[2s] ease-out grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105"
                                     alt={cat}
