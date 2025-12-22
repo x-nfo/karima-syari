@@ -25,10 +25,44 @@ const ProductDetail = () => {
     const [selectedSize, setSelectedSize] = useState<string>('');
     const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
 
+    // Sync color when active image changes (Reverse Linking)
+    useEffect(() => {
+        if (product?.colorImageIndex) {
+            // Find the color that corresponds to the current image index
+            // Logic: Find the mapped index that is closest to (<=) the current activeImgIndex
+            let bestMatchColor = '';
+            let maxIndexFound = -1;
+
+            Object.entries(product.colorImageIndex).forEach(([color, index]) => {
+                if (index <= activeImgIndex && index > maxIndexFound) {
+                    maxIndexFound = index;
+                    bestMatchColor = color;
+                }
+            });
+
+            // Only update if we found a valid color mapping that precedes or matches current image
+            // and it's different from current
+            if (bestMatchColor && bestMatchColor !== selectedColor) {
+                setSelectedColor(bestMatchColor);
+            }
+        }
+    }, [activeImgIndex, product, selectedColor]);
+
+
+
     useEffect(() => {
         if (product) {
-            setSelectedColor(product.colors?.[0] || '');
+            const initialColor = product.colors?.[0] || '';
+            setSelectedColor(initialColor);
             setSelectedSize(product.sizes?.[0] || '');
+
+            // Set initial image if mapping exists
+            if (product.colorImageIndex && product.colorImageIndex[initialColor] !== undefined) {
+                setActiveImgIndex(product.colorImageIndex[initialColor]);
+            } else {
+                setActiveImgIndex(0);
+            }
+
             window.scrollTo({ top: 0, behavior: 'smooth' });
             setIsLiked(false); // Reset like on new product load
         }
@@ -198,7 +232,22 @@ const ProductDetail = () => {
                                     {product.colors?.map((c, i) => (
                                         <button
                                             key={i}
-                                            onClick={() => setSelectedColor(c)}
+                                            onClick={() => {
+                                                setSelectedColor(c);
+                                                if (product.colorImageIndex && product.colorImageIndex[c] !== undefined) {
+                                                    const newIndex = product.colorImageIndex[c];
+                                                    setActiveImgIndex(newIndex);
+
+                                                    // Scroll mobile carousel
+                                                    const carousel = document.getElementById('mobile-carousel');
+                                                    if (carousel) {
+                                                        carousel.scrollTo({
+                                                            left: carousel.clientWidth * newIndex,
+                                                            behavior: 'smooth'
+                                                        });
+                                                    }
+                                                }
+                                            }}
                                             className={`w-8 h-8 rounded-full focus:outline-none transition-all duration-300 ${selectedColor === c ? 'ring-1 ring-offset-4 ring-karima-brand scale-110' : 'hover:scale-110 opacity-70 hover:opacity-100'}`}
                                             style={{ backgroundColor: c }}
                                         />

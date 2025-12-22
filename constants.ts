@@ -297,6 +297,12 @@ export const PRODUCTS: Product[] = [
     description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
     tags: ['hijab', 'modest', 'maroon'],
     colors: ['#373557', '#6c84b8', '#86a6cf', '#d3e3f5'],
+    colorImageIndex: {
+      '#373557': 1, // Navy -> index 1
+      '#6c84b8': 3, // Jeans -> index 3
+      '#86a6cf': 5, // Blue -> index 5
+      '#d3e3f5': 7  // Light Blue -> index 7
+    },
     sizes: ['S', 'M', 'L', 'XL']
   },
   {
@@ -311,6 +317,12 @@ export const PRODUCTS: Product[] = [
     description: 'Inspired by Marwah - the sacred hill of Sa`i this abaya reflects softness and faith. Crafted in denim with subtle patternt. it brings color and elegance to modest wear.',
     tags: ['hijab', 'modest', 'maroon'],
     colors: ['#373557', '#6c84b8', '#86a6cf', '#d3e3f5'],
+    colorImageIndex: {
+      '#373557': 1, // Navy -> index 1
+      '#6c84b8': 3, // Jeans -> index 3
+      '#86a6cf': 5, // Blue -> index 5
+      '#d3e3f5': 7  // Light Blue -> index 7
+    },
     sizes: ['S', 'M', 'L', 'XL']
   },
 

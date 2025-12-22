@@ -11,6 +11,7 @@ export interface Product {
   colors?: string[]; // Hex codes
   sizes?: string[]; // e.g. 'XS', 'S', 'M', 'L'
   images?: string[];
+  colorImageIndex?: Record<string, number>; // Map color hex to image index
 }
 
 export interface CartItem extends Product {
